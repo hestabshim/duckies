@@ -1,13 +1,36 @@
 import React from 'react';
+import './Home.css'; 
 
 function Home() {
   return (
     <div className="home">
-      <h1>Welcome to Duckies</h1>
-      <div className="hero-section">
-        <p>Discover our delightful collection of rubber ducks for all occasions!</p>
-        <img src="https://images.unsplash.com/photo-1559715745-e1b33a271c8f" alt="Colorful rubber ducks" />
-      </div>
+      {/* Navigation Bar */}
+      <nav className="navbar">
+        <div className="logo">duckies</div>
+        <ul className="nav-links">
+          <li>Shop</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Custom</li>
+        </ul>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="hero-section">
+        <h1 className="hero-title">duckies</h1>
+        <p className="tagline">find your perfect duck.</p>
+        <button className="shop-button">shop now</button>
+      </section>
+
+      {/* New Arrivals */}
+      <section className="new-arrivals">
+        <h2>New Arrivals</h2>
+        <div className="arrival-cards">
+          <div className="card">Item 1</div>
+          <div className="card">Item 2</div>
+          <div className="card">Item 3</div>
+        </div>
+      </section>
     </div>
   );
 }
