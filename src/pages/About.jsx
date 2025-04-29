@@ -6,7 +6,7 @@ function About() {
     <div className="about">
       <div className="about-content">
         <div className="image-container">
-          <img src="/final-app/about_duck.jpg" alt="Rubber ducks in a row" />
+          <img src="/duckies/about_duck.jpg" alt="Rubber ducks in a row" />
         </div>
         <div className="about-text">
           <h3>because a rubber duck makes everything better</h3>

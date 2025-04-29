@@ -44,7 +44,7 @@ function App() {
   }
 
   return (
-    <Router basename="/final-app">
+    <Router basename="/duckies">
       <div className="app">
         <header>
           <nav>
