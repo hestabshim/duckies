@@ -1,2 +1,2 @@
-# final-app
-Final Project for CGT 390
+# duckies
+Rubber Duck E-commerce Site
