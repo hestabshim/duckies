@@ -53,7 +53,7 @@ function App() {
             <Link to="/shop">Shop</Link>
             <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>
-            <Link to ="/custom">Custom</Link>
+            <Link to="/custom">Custom</Link>
           </nav>
           <button className="cart-button" onClick={() => setShowCart(!showCart)}>
             Cart ({cart.reduce((total, item) => total + item.quantity, 0)})
@@ -97,7 +97,7 @@ function App() {
             <Route path="/shop" element={<Shop addToCart={addToCart} />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/custom" element = {<Custom/>}/>
+            <Route path="/custom" element={<Custom />}/>
           </Routes>
         </main>
       </div>
