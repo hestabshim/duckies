@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Shop from './pages/Shop'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Custom from './pages/Custom'
 
 function App() {
   const [cart, setCart] = useState([])
@@ -52,6 +53,7 @@ function App() {
             <Link to="/shop">Shop</Link>
             <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>
+            <Link to ="/custom">Custom</Link>
           </nav>
           <button className="cart-button" onClick={() => setShowCart(!showCart)}>
             Cart ({cart.reduce((total, item) => total + item.quantity, 0)})
@@ -95,6 +97,7 @@ function App() {
             <Route path="/shop" element={<Shop addToCart={addToCart} />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/custom" element = {<Custom/>}/>
           </Routes>
         </main>
       </div>

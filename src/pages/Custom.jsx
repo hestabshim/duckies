@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Custom.css';
+// import './Custom.css';
 
 function Custom() {
   const [name, setName] = useState('');
