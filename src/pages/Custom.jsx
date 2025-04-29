@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Custom.css';
+
 
 function Custom() {
   const [name, setName] = useState('');
@@ -9,7 +9,7 @@ function Custom() {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(`Your custom duck:\nName: ${name}\nColor: ${color}\nHat: ${hat}`);
-    // Optional: send data to backend/server
+    
   };
 
   return (
@@ -32,7 +32,7 @@ function Custom() {
             <option value="yellow">Yellow</option>
             <option value="blue">Blue</option>
             <option value="pink">Pink</option>
-            <option value="green">Green</option>
+            <option value="green">Red</option>
           </select>
         </label>
 
