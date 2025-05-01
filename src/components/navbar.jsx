@@ -1,10 +1,10 @@
-
+import "../styles/homepage.css"
 export const Navbar =() => {
     return (
         <Router basename="/duckies/">
           <div className="app">
             <header>
-              <nav className="nav">
+              <nav className="navbar">
                 <Link to="/">Home</Link>
                 <Link to="/shop">Shop</Link>
                 <Link to="/about">About</Link>

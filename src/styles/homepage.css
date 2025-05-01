@@ -1,101 +1,100 @@
 .home {
-    text-align: center;
-    padding: 40px 20px;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-  }
-  
-  .logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    padding: 5px 10px;
-  }
-  
-  .nav-links a:hover {
-    color: #f4d03f; /* Duck yellow hover color */
-  }
-  
-  /* Hero Section */
-  .hero-section {
-    margin-top: 60px;
-    padding: 40px 20px;
-  }
-  
-  .hero-title {
-    font-size: 3.5em;
-    margin-bottom: 15px;
-  }
-  
-  .tagline {
-    font-size: 1.5em;
-    color: #555;
-    margin-bottom: 25px;
-  }
-  
-  .shop-button {
-    background-color: #f4d03f;
-    color: #333;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1.2em;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .shop-button:hover {
-    background-color: #f1c40f;
-  }
-  
-  /* New Arrivals Section */
-  .new-arrivals {
-    margin-top: 80px;
-  }
-  
-  .new-arrivals h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-  }
-  
-  .arrival-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  
-  .arrival-cards .card {
-    background-color: white;
-    padding: 30px 20px;
-    border-radius: 8px;
-    width: 220px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
-  
-  .arrival-cards .card:hover {
-    transform: translateY(-5px);
-    background-color: #fafafa;
-  }
-  
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  color: #f4d03f; /* Duck yellow hover color */
+}
+
+/* Hero Section */
+.hero-section {
+  margin-top: 60px;
+  padding: 40px 20px;
+}
+
+.hero-title {
+  font-size: 3.5em;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.shop-button {
+  background-color: #f4d03f;
+  color: #333;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.shop-button:hover {
+  background-color: #f1c40f;
+}
+
+/* New Arrivals Section */
+.new-arrivals {
+  margin-top: 80px;
+}
+
+.new-arrivals h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.arrival-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.arrival-cards .card {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 8px;
+  width: 220px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.arrival-cards .card:hover {
+  transform: translateY(-5px);
+  background-color: #fafafa;
+}
