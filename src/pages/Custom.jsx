@@ -36,89 +36,100 @@ function Custom() {
   const getHatStyle = () => {
     switch (hat) {
       case 'top-hat':
-        return {
-          top: '-25px',
-          width: '90px',
-        };
+        return { top: '-25px', width: '90px' };
       case 'cowboy':
-        return {
-          top: '-15px',
-          width: '150px',
-        };
+        return { top: '-15px', width: '150px' };
       case 'party':
-        return {
-          top: '-15px',
-          width: '60px',
-        };
+        return { top: '-15px', width: '60px' };
       default:
         return {};
     }
   };
 
   return (
-    <div className="custom-page" style={{ textAlign: 'center', padding: '40px' }}>
-      <h1>Create Your Custom Duck</h1>
+    <div
+      style={{
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#fdfdfd',
+        padding: '20px',
+      }}
+    >
+      <div
+        style={{
+          textAlign: 'center',
+          padding: '40px',
+          backgroundColor: '#fff',
+          borderRadius: '12px',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+          maxWidth: '480px',
+          width: '100%',
+        }}
+      >
+        <h1>Create Your Custom Duck</h1>
 
-      <form onSubmit={handleSubmit} style={{ maxWidth: '400px', margin: '0 auto' }}>
-        <label style={{ display: 'block', marginBottom: '15px' }}>
-          Duck Name:
-          <input
-            type="text"
-            value={name}
-            placeholder="e.g., Mr. Quack"
-            onChange={(e) => setName(e.target.value)}
+        <form onSubmit={handleSubmit}>
+          <label style={{ display: 'block', marginBottom: '15px' }}>
+            Duck Name:
+            <input
+              type="text"
+              value={name}
+              placeholder="e.g., Mr. Quack"
+              onChange={(e) => setName(e.target.value)}
+              style={{
+                width: '100%',
+                padding: '10px',
+                marginTop: '5px',
+                borderRadius: '6px',
+                border: '1px solid #ccc',
+              }}
+            />
+          </label>
+
+          <label style={{ display: 'block', marginBottom: '15px' }}>
+            Choose Color:
+            <select
+              value={color}
+              onChange={(e) => setColor(e.target.value)}
+              style={{ width: '100%', padding: '10px', borderRadius: '6px' }}
+            >
+              <option value="yellow">Yellow</option>
+              <option value="blue">Blue</option>
+              <option value="pink">Pink</option>
+              <option value="red">Red</option>
+            </select>
+          </label>
+
+          <label style={{ display: 'block', marginBottom: '20px' }}>
+            Add Hat:
+            <select
+              value={hat}
+              onChange={(e) => setHat(e.target.value)}
+              style={{ width: '100%', padding: '10px', borderRadius: '6px' }}
+            >
+              <option value="none">None</option>
+              <option value="top-hat">Top Hat</option>
+              <option value="cowboy">Cowboy Hat</option>
+              <option value="party">Party Hat</option>
+            </select>
+          </label>
+
+          <button
+            type="submit"
             style={{
-              width: '100%',
-              padding: '10px',
-              marginTop: '5px',
-              borderRadius: '6px',
-              border: '1px solid #ccc',
+              padding: '12px 24px',
+              backgroundColor: '#ffcc00',
+              border: 'none',
+              borderRadius: '8px',
+              fontWeight: 'bold',
+              cursor: 'pointer',
             }}
-          />
-        </label>
-
-        <label style={{ display: 'block', marginBottom: '15px' }}>
-          Choose Color:
-          <select
-            value={color}
-            onChange={(e) => setColor(e.target.value)}
-            style={{ width: '100%', padding: '10px', borderRadius: '6px' }}
           >
-            <option value="yellow">Yellow</option>
-            <option value="blue">Blue</option>
-            <option value="pink">Pink</option>
-            <option value="red">Red</option>
-          </select>
-        </label>
-
-        <label style={{ display: 'block', marginBottom: '20px' }}>
-          Add Hat:
-          <select
-            value={hat}
-            onChange={(e) => setHat(e.target.value)}
-            style={{ width: '100%', padding: '10px', borderRadius: '6px' }}
-          >
-            <option value="none">None</option>
-            <option value="top-hat">Top Hat</option>
-            <option value="cowboy">Cowboy Hat</option>
-            <option value="party">Party Hat</option>
-          </select>
-        </label>
-
-        <button
-          type="submit"
-          style={{
-            padding: '12px 24px',
-            backgroundColor: '#ffcc00',
-            border: 'none',
-            borderRadius: '8px',
-            fontWeight: 'bold',
-            cursor: 'pointer',
-          }}
-        >
-          Build Duck
-        </button>
-      </form>
+            Build Duck
+          </button>
+        </form>
 
       <div className="duck-preview" style={{ marginTop: '40px' }}>
         <div style={{ position: 'relative', width: '220px', margin: '0 auto' }}>
