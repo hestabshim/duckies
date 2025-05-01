@@ -1,4 +1,11 @@
 import React, { useState } from 'react';
+import yellowDuck from '/assets/yellowduckies.jpg';
+import blueDuck from '/assets/blueduckies.jpg';
+import pinkDuck from '/assets/pinkduckies.jpg';
+import redDuck from '/assets/redduckies.jpg';
+import topHat from '/assets/tophat.png';
+import cowboyHat from '/assets/cowboyhat.png';
+import partyHat from '/assets/partyhat.png';
 
 function Custom() {
   const [name, setName] = useState('');
@@ -10,23 +17,43 @@ function Custom() {
     alert(`Your custom duck:\nName: ${name}\nColor: ${color}\nHat: ${hat}`);
   };
 
-  // Duck image map (your actual filenames)
   const duckMap = {
-    yellow: "/137-35052-Yellow.webp",
-    blue: "/137-35052-blue.webp",
-    pink: "/137-35052-pink.webp",
-    red: "/137-35052-red.webp",
+    yellow: yellowDuck,
+    blue: blueDuck,
+    pink: pinkDuck,
+    red: redDuck,
   };
 
-  // Hat image map (your actual filenames)
   const hatMap = {
-    "top-hat": "/download-8.jpg",
-    cowboy: "/download-7.jpg",
-    party: "/download-6.jpg",
+    'top-hat': topHat,
+    cowboy: cowboyHat,
+    party: partyHat,
   };
 
   const duckImage = duckMap[color];
   const hatImage = hat !== 'none' ? hatMap[hat] : null;
+
+  const getHatStyle = () => {
+    switch (hat) {
+      case 'top-hat':
+        return {
+          top: '-25px',
+          width: '90px',
+        };
+      case 'cowboy':
+        return {
+          top: '-15px',
+          width: '150px',
+        };
+      case 'party':
+        return {
+          top: '-15px',
+          width: '60px',
+        };
+      default:
+        return {};
+    }
+  };
 
   return (
     <div className="custom-page" style={{ textAlign: 'center', padding: '40px' }}>
@@ -45,7 +72,7 @@ function Custom() {
               padding: '10px',
               marginTop: '5px',
               borderRadius: '6px',
-              border: '1px solid #ccc'
+              border: '1px solid #ccc',
             }}
           />
         </label>
@@ -86,7 +113,7 @@ function Custom() {
             border: 'none',
             borderRadius: '8px',
             fontWeight: 'bold',
-            cursor: 'pointer'
+            cursor: 'pointer',
           }}
         >
           Build Duck
@@ -95,22 +122,35 @@ function Custom() {
 
       <div className="duck-preview" style={{ marginTop: '40px' }}>
         <div style={{ position: 'relative', width: '220px', margin: '0 auto' }}>
-          <img src={duckImage} alt={`Duck - ${color}`} style={{ width: '220px' }} />
+          {/* Duck Image */}
+          <img
+            src={duckImage}
+            alt={`Duck - ${color}`}
+            style={{
+              width: '220px',
+              position: 'relative',
+              zIndex: 1,
+              marginTop: '40px',
+            }}
+          />
+          {/* Hat Image */}
           {hatImage && (
             <img
               src={hatImage}
               alt={`Hat - ${hat}`}
               style={{
                 position: 'absolute',
-                top: '-10px', // adjust position as needed
-                left: '10px',
-                width: '200px',
-                pointerEvents: 'none'
+                left: '50%',
+                transform: 'translateX(-50%)',
+                pointerEvents: 'none',
+                zIndex: 2,
+                ...getHatStyle(),
               }}
             />
           )}
         </div>
-        <p style={{ marginTop: '20px' }}>
+
+        <p style={{ marginTop: '30px', fontSize: '16px' }}>
           🦆 Preview: {name || 'Unnamed Duck'} wearing a {hat.replace('-', ' ')} and is {color}
         </p>
       </div>
