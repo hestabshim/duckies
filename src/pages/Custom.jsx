@@ -99,7 +99,7 @@ function Custom() {
             style={{ width: '100%', padding: '10px', borderRadius: '6px' }}
           >
             <option value="none">None</option>
-            <option value="top-hat">Top Hat</option>
+            <option value="topHat">Top Hat</option>
             <option value="cowboy">Cowboy Hat</option>
             <option value="party">Party Hat</option>
           </select>
