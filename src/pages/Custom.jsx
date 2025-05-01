@@ -131,42 +131,43 @@ function Custom() {
           </button>
         </form>
 
-      <div className="duck-preview" style={{ marginTop: '40px' }}>
-        <div style={{ position: 'relative', width: '220px', margin: '0 auto' }}>
-         
-          <img
-            src={duckImage}
-            alt={`Duck - ${color}`}
-            style={{
-              width: '220px',
-              position: 'relative',
-              zIndex: 1,
-              marginTop: '40px',
-            }}
-          />
-         
-          {hatImage && (
+        <div className="duck-preview" style={{ marginTop: '40px' }}>
+          <div style={{ position: 'relative', width: '220px', margin: '0 auto' }}>
+
             <img
-              src={hatImage}
-              alt={`Hat - ${hat}`}
+              src={duckImage}
+              alt={`Duck - ${color}`}
               style={{
-                position: 'absolute',
-                left: '50%',
-                transform: 'translateX(-50%)',
-                pointerEvents: 'none',
-                zIndex: 2,
-                ...getHatStyle(),
+                width: '220px',
+                position: 'relative',
+                zIndex: 1,
+                marginTop: '40px',
               }}
             />
-          )}
-        </div>
 
-        <p style={{ marginTop: '30px', fontSize: '16px' }}>
-          🦆 Preview: {name || 'Unnamed Duck'} wearing a {hat.replace('-', ' ')} and is {color}
-        </p>
+            {hatImage && (
+              <img
+                src={hatImage}
+                alt={`Hat - ${hat}`}
+                style={{
+                  position: 'absolute',
+                  left: '50%',
+                  transform: 'translateX(-50%)',
+                  pointerEvents: 'none',
+                  zIndex: 2,
+                  ...getHatStyle(),
+                }}
+              />
+            )}
+          </div>
+
+          <p style={{ marginTop: '30px', fontSize: '16px' }}>
+            🦆 Preview: {name || 'Unnamed Duck'} wearing a {hat.replace('-', ' ')} and is {color}
+          </p>
+        </div>
       </div>
-    </div>
-  );
+      </div>
+      );
 }
 
-export default Custom;
+      export default Custom;
