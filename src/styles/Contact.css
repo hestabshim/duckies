@@ -4,7 +4,7 @@
   width: 100%;
   height: 100%;
   min-height: 100vh; /* Ensure it takes full viewport height */
-  background-color: #3da5d9; /* Blue background color */
+  background-color: #7BA6FB; /* Blue background color */
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
 }
 
 .contact h2 {
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'DynaPuff', cursive;
   font-size: 2.5rem;
   color: #ffffff;
   text-align: center;
@@ -39,7 +39,7 @@
 }
 
 .contact h2 {
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'DynaPuff', cursive;
   font-size: 2.5rem;
   color: #fff1d0;
   margin-bottom: 10px;
@@ -47,7 +47,7 @@
 }
 
 .contact-info h3 {
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'DynaPuff', cursive;
   font-size: 1.8rem;
   color: #fff1d0;
   margin-bottom: 10px;
@@ -55,7 +55,7 @@
 }
 
 .contact-info p {
-  font-family: 'Baloo 2', cursive;
+  font-family: 'DynaPuff', cursive;
   font-size: 1.1rem;
   color: #ffffff;
   line-height: 1.3;

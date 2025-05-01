@@ -5,7 +5,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #3da5d9; /* Added blue background color */
+  background-color: #7BA6FB; /* Added blue background color */
 }
 
 .about-content {
@@ -42,10 +42,11 @@
   align-items: center;
   text-align: center;
   gap: 20px;
+  font-family: "DynaPuff";
 }
 
 .about-text h3 {
-  font-family: 'Gochi Hand', cursive;
+  font-family: DynaPuff;
   font-size: 2.5rem;
   color: #fff1d0; /* Changed to white for better contrast */
   margin-bottom: 10px;
@@ -53,7 +54,7 @@
 }
 
 .about-text p {
-  font-family: 'Baloo 2', cursive;
+  font-family: DynaPuff;
   font-size: 1.2rem;
   line-height: 1.6;
   color: #ffffff; /* Changed to white for better contrast */

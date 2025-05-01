@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import yellowDuck from '/assets/yellowduckies.jpg';
-import blueDuck from '/assets/blueduckies.jpg';
-import pinkDuck from '/assets/pinkduckies.jpg';
-import redDuck from '/assets/redduckies.jpg';
+import yellowDuck from '/assets/yellowduckies.png';
+import blueDuck from '/assets/blueduckies.png';
+import pinkDuck from '/assets/pinkduckies.png';
+import redDuck from '/assets/redduckies.png';
 import topHat from '/assets/tophat.png';
 import cowboyHat from '/assets/cowboyhat.png';
 import partyHat from '/assets/partyhat.png';

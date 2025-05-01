@@ -14,7 +14,7 @@ function Home() {
           <img src="./ducks.png" className="ducks duckreflection"></img>
         </span>
       </section>
-      <p className="tagline">find your perfect duck.</p>
+        <p className="tagline">find your perfect duck.</p>
         <Link to="/shop" className="shop-button">
           shop now
         </Link>
