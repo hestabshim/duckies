@@ -13,13 +13,11 @@ function Home() {
           <img src="./ducks.png" className="ducks"></img>
           <img src="./ducks.png" className="ducks duckreflection"></img>
         </span>
-
-        <p className="tagline">find your perfect duck.</p>
+      </section>
+      <p className="tagline">find your perfect duck.</p>
         <Link to="/shop" className="shop-button">
           shop now
         </Link>
-      </section>
-
       <section className="new-arrivals">
         <h2>New Arrivals</h2>
         <div className="arrival-cards">
