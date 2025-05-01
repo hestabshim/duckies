@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Fredoka:wght@400;500;600&family=Gochi+Hand&display=swap');
+
 .about {
   flex: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #3da5d9; /* Added blue background color */
 }
 
 .about-content {
@@ -39,4 +42,19 @@
   align-items: center;
   text-align: center;
   gap: 20px;
+}
+
+.about-text h3 {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 2.5rem;
+  color: #fff1d0; /* Changed to white for better contrast */
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Added subtle text shadow */
+}
+
+.about-text p {
+  font-family: 'Baloo 2', cursive;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ffffff; /* Changed to white for better contrast */
 }
