@@ -1,0 +1,26 @@
+.productsGrid {
+    display: flex;
+}
+.productCard {
+    width: 250px;
+    height: 200px;
+    background-color: aliceblue;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 30px; 
+}
+.cardImage {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: block;
+    border-radius: inherit;
+}
+.shop {
+    background-color: #7BA6FB;
+    width: 100vw;
+    height: 100vh;
+}
+.h2 {
+  font-family: 'DynaPuff';
+}
