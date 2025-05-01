@@ -122,7 +122,7 @@ function Custom() {
 
       <div className="duck-preview" style={{ marginTop: '40px' }}>
         <div style={{ position: 'relative', width: '220px', margin: '0 auto' }}>
-          {/* Duck Image */}
+         
           <img
             src={duckImage}
             alt={`Duck - ${color}`}
@@ -133,7 +133,7 @@ function Custom() {
               marginTop: '40px',
             }}
           />
-          {/* Hat Image */}
+         
           {hatImage && (
             <img
               src={hatImage}
