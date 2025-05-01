@@ -10,7 +10,7 @@ function Custom() {
     alert(`Your custom duck:\nName: ${name}\nColor: ${color}\nHat: ${hat}`);
   };
 
-  // Duck image map (your actual filenames)
+  
   const duckMap = {
     yellow: "/137-35052-Yellow.webp",
     blue: "/137-35052-blue.webp",
@@ -18,7 +18,6 @@ function Custom() {
     red: "/137-35052-red.webp",
   };
 
-  // Hat image map (your actual filenames)
   const hatMap = {
     "top-hat": "/download-8.jpg",
     cowboy: "/download-7.jpg",
