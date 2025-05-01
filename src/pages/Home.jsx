@@ -1,14 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import "../styles/homepage.css"
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/homepage.css";
 function Home() {
   return (
     <div className="home">
-      <nav className="navbar">
-      </nav>
-
       <section className="hero-section">
-        <h1 className="hero-title">duckies</h1>
+        <span className="top">
+          <img src="./Vector.png" className="logo"></img>
+          <img src="./Vector.png" className="logo reflection"></img>
+        </span>
+        <span className="bottom">
+          <img src="./ducks.png" className="ducks"></img>
+          <img src="./ducks.png" className="ducks duckreflection"></img>
+        </span>
+
         <p className="tagline">find your perfect duck.</p>
         <Link to="/shop" className="shop-button">
           shop now

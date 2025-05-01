@@ -1,25 +1,20 @@
-import "../styles/homepage.css"
-export const Navbar =() => {
-    return (
-        <Router basename="/duckies/">
-          <div className="app">
-            <header>
-              <nav className="navbar">
-                <Link to="/">Home</Link>
-                <Link to="/shop">Shop</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
-                {location.shop !== '/shop' && 
-                <button>
-                Cart ({cart.reduce((total, item) => total + item.quantity, 0)})
-              </button>
-                }
-              </nav>
-             
-            </header>
-            </div>
-            </Router>
-            )
-}
+import "../styles/homepage.css";
+export const Navbar = () => {
+  return (
+    <header>
+      <img className="duckLogo" src="./rubber-duck-svgrepo-com 1.svg"></img>
+
+      <nav className="navbar">
+        <a href="/">Home</a>
+        <a href="/duckies/shop">Shop</a>
+        <a href="/duckies/about">About</a>
+        <a href="/duckies/contact">Contact</a>
+        <a href="/duckies/custom">Custom</a>
+        {location.shop !== "/shop"}
+      </nav>
+      <img src="./navbar.png" className="navbar_style"></img>
+    </header>
+  );
+};
 
 export default Navbar;

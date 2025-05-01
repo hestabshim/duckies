@@ -6,7 +6,7 @@ import Shop from './pages/Shop'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Custom from './pages/Custom'
-
+import Navbar from "./components/navbar";
 function App() {
   const [cart, setCart] = useState([])
   const [showCart, setShowCart] = useState(false)
@@ -47,19 +47,10 @@ function App() {
   return (
     <Router basename="/duckies">
       <div className="app">
-        <header>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/shop">Shop</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/custom">Custom</Link>
-          </nav>
+  
           <button className="cart-button" onClick={() => setShowCart(!showCart)}>
             Cart ({cart.reduce((total, item) => total + item.quantity, 0)})
           </button>
-        </header>
-
         {showCart && (
           <div className="cart-container">
             <h2>Shopping Cart</h2>
@@ -92,6 +83,7 @@ function App() {
         )}
 
         <main>
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop addToCart={addToCart} />} />

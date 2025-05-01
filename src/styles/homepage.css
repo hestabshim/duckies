@@ -1,19 +1,73 @@
 .home {
   text-align: center;
   padding: 40px 20px;
+  height: 100vh;
 }
-
+a {
+  font-family: "DynaPuff";
+}
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: left;
-  padding: 20px 0;
+  padding: 20px;
+  margin-left: 500px;
+  background-color: transparent;
+  z-index: 1;
 }
+.navbar_style {
+  z-index: 0;
+  width: 100vw;
+  height: 150px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+.duckLogo {
+  height: 75px;
+  width: auto;
+  z-index: 1;
+  margin: 20px;
+  padding: 10px;
+}
+.ducks {
 
+  z-index: 2;
+  position: relative;
+  height: 240px;
+  width: auto;
+}
 .logo {
-  font-size: 1.8em;
-  font-weight: bold;
-  color: #333;
+  height: 75%;
+  width: 75%;
+  z-index: 1;
+  display: inline;
+}
+.reflection {
+  opacity: 50%;
+  transform: translate(0, -95%);
+  z-index: 0;
+  position: relative;
+}
+.duckreflection {
+  opacity: 50%;
+  transform: translate(0, -95%);
+  z-index: 1;
+  position: relative;
+  height: 240px;
+  width: auto;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  transform: translate(0, -100%);
+  z-index: 2;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  align-items: center;
+  width: 100%;
 }
 
 .nav-links {
@@ -37,8 +91,13 @@
 
 /* Hero Section */
 .hero-section {
+  display: flex;
   margin-top: 60px;
   padding: 40px 20px;
+  width: fit-content;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
@@ -48,8 +107,11 @@
 
 .tagline {
   font-size: 1.5em;
-  color: #555;
+  color: #162e5c;
   margin-bottom: 25px;
+  font-weight: bold;
+  font-family: "DynaPuff";
+  filter: drop-shadow(2px 2px 0px #162f5c79);
 }
 
 .shop-button {
